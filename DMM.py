@@ -81,7 +81,7 @@ def segmentation_allocation(segments: List[Segment], memory_size: int) -> Dict[i
 
     return allocation
 
-
+# Function to visualize page replacement in memory
 def visualize_memory(history: List[List[int]], algorithm_name: str):
     fig, ax = plt.subplots(figsize=(10, 5))
     for i, state in enumerate(history):
