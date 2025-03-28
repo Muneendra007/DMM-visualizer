@@ -66,7 +66,7 @@ def lru_page_replacement(pages: List[int], frame_count: int) -> Tuple[List[List[
 
     return history, page_faults
 
-
+# Segmentation Allocation Algorithm
 def segmentation_allocation(segments: List[Segment], memory_size: int) -> Dict[int, int]:
     allocation = {}
     current_address = 0
