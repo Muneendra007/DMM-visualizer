@@ -15,8 +15,8 @@ import time
 class Page:
     def __init__(self, page_number: int):
         self.page_number = page_number
-
-
+        
+# Class representing a Segment for segmentation allocation
 class Segment:
     def __init__(self, segment_id: int, size: int):
         self.segment_id = segment_id
