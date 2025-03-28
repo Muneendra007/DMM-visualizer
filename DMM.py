@@ -69,7 +69,7 @@ def lru_page_replacement(pages: List[int], frame_count: int) -> Tuple[List[List[
 # Segmentation Allocation Algorithm
 def segmentation_allocation(segments: List[Segment], memory_size: int) -> Dict[int, int]:
     allocation = {}    # Dictionary to store segment base addresses
-    current_address = 0
+    current_address = 0     # Start from the beginning of memory
 
     for segment in segments:
         if current_address + segment.size <= memory_size:
