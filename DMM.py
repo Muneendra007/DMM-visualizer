@@ -110,7 +110,7 @@ def run_simulation():
         messagebox.showinfo('LRU Page Faults', f'Total Page Faults (LRU): {lru_faults}')
     except Exception as e:
         messagebox.showerror('Error', f'Invalid input: {e}')
-
+# Segmentation Allocation Algorithm
 
 def run_segmentation():
     try:
