@@ -23,7 +23,7 @@ class Segment:
         self.size = size
         self.base_address = None
 
-
+# FIFO Page Replacement Algorithm
 def fifo_page_replacement(pages: List[int], frame_count: int) -> Tuple[List[List[int]], int]:
     memory = []
     page_faults = 0
@@ -41,7 +41,7 @@ def fifo_page_replacement(pages: List[int], frame_count: int) -> Tuple[List[List
 
     return history, page_faults
 
-
+# LRU Page Replacement Algorithm
 def lru_page_replacement(pages: List[int], frame_count: int) -> Tuple[List[List[int]], int]:
     memory = []
     page_faults = 0
