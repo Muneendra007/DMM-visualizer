@@ -25,7 +25,7 @@ class Segment:
 
 # FIFO Page Replacement Algorithm
 def fifo_page_replacement(pages: List[int], frame_count: int) -> Tuple[List[List[int]], int]:
-    memory = []
+    memory = []   # List representing frames in memory
     page_faults = 0
     history = []
 
