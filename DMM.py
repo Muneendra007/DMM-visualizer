@@ -96,7 +96,7 @@ def visualize_memory(history: List[List[int]], algorithm_name: str):
     plt.title(f'Memory Allocation Visualization ({algorithm_name})')
     plt.show()
 
-
+# Function to run page replacement simulations
 def run_simulation():
     try:
         pages = list(map(int, entry_pages.get().split(',')))
