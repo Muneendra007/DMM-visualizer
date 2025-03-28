@@ -3,7 +3,7 @@
 # Description:
 # This project implements a tool to simulate and visualize memory management techniques like Paging, Segmentation, and Virtual Memory.
 # It handles user-defined inputs for memory allocation, page faults, and replacement algorithms (FIFO, LRU).
-# Built using Python's standard libraries, matplotlib for visualization, and Tkinter for the user interface.
+
 
 import matplotlib.pyplot as plt
 from typing import List, Dict, Tuple
