@@ -68,7 +68,7 @@ def lru_page_replacement(pages: List[int], frame_count: int) -> Tuple[List[List[
 
 # Segmentation Allocation Algorithm
 def segmentation_allocation(segments: List[Segment], memory_size: int) -> Dict[int, int]:
-    allocation = {}
+    allocation = {}    # Dictionary to store segment base addresses
     current_address = 0
 
     for segment in segments:
@@ -110,7 +110,7 @@ def run_simulation():
         messagebox.showinfo('LRU Page Faults', f'Total Page Faults (LRU): {lru_faults}')
     except Exception as e:
         messagebox.showerror('Error', f'Invalid input: {e}')
-# Segmentation Allocation Algorithm
+
 
 def run_segmentation():
     try:
