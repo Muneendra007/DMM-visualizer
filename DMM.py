@@ -11,7 +11,7 @@ import tkinter as tk
 from tkinter import messagebox
 import time
 
-
+# Class representing a Page in memory
 class Page:
     def __init__(self, page_number: int):
         self.page_number = page_number
