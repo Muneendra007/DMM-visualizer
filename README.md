@@ -2,47 +2,49 @@
 
 
 ##  Description
-The project is a tool to simulate and visualize memory management techniques like paging, segmentation, and virtual memory. It allows user-defined inputs for memory allocation, page faults, and replacement algorithms (FIFO, LRU).
+This project is a step-by-step simulation tool built using HTML, CSS, and JavaScript that demonstrates core memory management techniques such as paging, segmentation, and virtual memory. The user can input parameters like page references, frame sizes, or segment details, and the tool visually represents how memory is allocated and managed. Unlike real-time systems, this simulator updates memory status based on user actions (e.g., clicking "Next Step" or "Simulate") rather than continuous live updates.LRU).
 
 ## Module-Wise Breakdown
 ### Module 1: Paging Module
-- Implements **FIFO** and **LRU** page replacement algorithms.
-- Tracks page faults and updates memory frames dynamically.
-- Maintains a history of page allocations for visualization.
+-Implements FIFO and LRU page replacement algorithms.
+-Simulates how pages are loaded, replaced, and faults are handled.
+-Operates step-by-step through a user-controlled interface.
 
 #### Key Functions:
-- Dynamically allocates memory in the heap at runtime.
-- Supports single and multiple block memory allocation.
-- Allows resizing of previously allocated memory.
-- Frees allocated memory to prevent memory leaks.
+-Accepts page reference strings and frame size from the user.
+-Updates memory frames on each step (button click).
+-Highlights page hits and faults visually.
 
-#### Key Functions:
-- Manages memory blocks dynamically in the heap.
-- Allocates and deallocates memory as per user/program needs.
-- Tracks memory fragmentation and available memory.
-- Ensures efficient memory utilization and prevents memory leaks.
+###Module 2: Segmentation Simulation Module
+-Simulates logical segmentation (e.g., stack, code, heap).
+-Accepts user-defined segments and memory size.
+-Displays how segments are mapped into memory blocks.
 
-### Module 3: Visualization Module
-- Uses **Matplotlib** to graphically represent memory changes over time.
-- Displays page frames and their updates at each step.
-- Provides a clear timeline of memory allocation.
+###Key Features:
 
-#### Key Functions:
-- Allocates memory for function calls and local variables.
-- Automatically frees memory when function execution completes.
-- Manages function call stack and recursion depth.
-- Prevents stack overflow by managing function calls effectively.
+-User submits segment base and limit values.
+-Simulator displays segment allocation statically or in steps.
+-Detects and flags invalid segment accesses.
 
-### Module 4: Graphical User Interface (GUI) Module
-- Built with **Tkinter** to provide a user-friendly interface.
-- Allows users to input page requests, frame sizes, and segment details.
-- Displays results and page fault counts using message boxes.
+###Module 3: Visualization Module
+-Uses HTML elements (e.g., grids, tables, or canvas) to represent memory.
+-Updates visuals only after user input or step command.
+-No background animation or automatic update loop.
 
-#### Key Functions:
-- Graphically represents memory usage (Heap vs Stack).
-- Tracks memory allocation, deallocation, and fragmentation.
-- Provides real-time updates on memory consumption.
-- Helps in identifying inefficient memory usage.
+Key Features:
+-Color-coded memory cells.
+-Visual representation of memory frames or segments.
+-Optional step-tracking to review past allocations.
+
+###Module 4: Graphical User Interface (GUI) Module
+-Designed with HTML/CSS for layout and styling.
+-Controlled using JavaScript to handle simulation logic and DOM updates.
+-Provides a clean, intuitive interface for user interaction.
+
+###Key Features:
+-Input forms for memory size, page/segment data.
+-Buttons for simulation control (Start, Next Step, Reset).
+-Displays output such as page fault count, memory usage, etc.
 
 Contributors:
 - @Muneendra007
